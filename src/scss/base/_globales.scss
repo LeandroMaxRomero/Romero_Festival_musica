@@ -3,6 +3,7 @@
 html {
     font-size: 62.5%; //? 1rem = 10px
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 *,
 *:before,
@@ -12,6 +13,13 @@ html {
 body{
     font-family: v.$fuente_pricipal;
     font-size: 1.6rem;
+
+    &.fijar-body {
+        overflow: hidden;
+    }
+    &.body-scroll{
+        padding-top: 8.6rem;
+    }
 }
 
 p{
@@ -43,6 +51,7 @@ h3{
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
+    height: auto;
     display: block;
 }
